@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class ATM
 {
 	private static char Prasann;
-    //private static final char ID = Prasann;
     private static final int  pin = 0;
        public static void main(String[] args) 
 	{
@@ -26,14 +25,15 @@ public class ATM
 		pin = s.nextInt();
 			
 
-		 if(ID  ==Prasann || pin ==5678)
+		 if(ID  ==Prasann || pin ==9854)
             System.out.println(" Login Succussful !");
          else 
             System.out.println("Something went wrong please enter coreect !" );
 			
+			
         }
 
-		while(ID != Prasann && pin != 5678);
+		while(ID != Prasann && pin !=9854 );
 		
 		do
 		{
@@ -110,10 +110,11 @@ public class ATM
 						catch (Exception e) {
 							System.out.println(e);
 						}
+						break;
 					}
 
 				case 5:
-					System.out.println("  \n\n  Thank you for using ATM service  \n\n  ");
+					System.out.println("  \n\n  ********** Thank you for using ATM service ********** \n\n  ");
 					break;
 
 				default:
